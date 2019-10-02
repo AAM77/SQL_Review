@@ -25,3 +25,27 @@ ORDER BY return_date DESC;
 -- other examples:
 SELECT * FROM payment
 WHERE amount IN (7.99, 8.99);
+
+
+
+--------------------------------------
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'Jen%';
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '%y';
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '%er%';
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '_her%';
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name NOT LIKE 'Jen%';
